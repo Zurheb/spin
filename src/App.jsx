@@ -1,0 +1,21 @@
+import {  Route, Routes } from "react-router-dom";
+import { FooHea } from "./FooHea/FooHea";
+import { MainPage } from "./MainPage/MainPage";
+import { FAQ } from "./FAQ/FAQ";
+import { GetiingStart } from "./GettingStart/GetiingStart";
+import { MainColor } from "./MainColor/MainColor";
+
+function App() {
+  return (
+    <FooHea>
+      <Routes>
+        <Route path="/" element={<MainPage/>}/>
+        <Route path="/About" element={<FAQ/>}/>
+        <Route path="/documentation/getting-started" element={<GetiingStart/>}/>
+        <Route path="/components/color" element={<MainColor/>}/>
+      </Routes>
+    </FooHea>
+  );
+}
+
+export default App;
