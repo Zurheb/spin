@@ -22,7 +22,7 @@ export const Deploy = () => {
                   alt="Logo"
                 />
               </div>
-              <p className="text-gray-700 ">
+              <p className="text-gray-700 mb-4 ">
                 Spin is fast. Files are always up to date. It’s easy to share
                 designs across the organization, so collaboration is easy.
               </p>
