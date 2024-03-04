@@ -9,7 +9,7 @@ export const Documintation = () => {
           <h1 className="text-5xl font-bold  mb-4">
             Deploy and scale seamlessly
           </h1>
-          <p className=" w-96 text-lg  text-gray-700">
+          <p className=" max-w-96 text-lg  text-gray-700">
             Spin helps teams create, test, and ship better designs from start to
             finish. Our optimized code base saves your team time when designing
             and coding static websites or landing pages.
