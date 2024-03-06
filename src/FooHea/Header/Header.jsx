@@ -115,7 +115,7 @@ export function StickyNavbar() {
           </div>
           <MobileNav open={openNav}>
             {navList}
-            <div className="flex items-center gap-x-1">
+            <div className=" grid md:grid-cols-2 items-center  gap-5">
               <Button
                 fullWidth
                 variant="text"
