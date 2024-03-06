@@ -10,7 +10,7 @@ function App() {
     <FooHea>
       <Routes>
         <Route path="/" element={<MainPage/>}/>
-        <Route path="/About" element={<FAQ/>}/>
+        <Route path="/about" element={<FAQ/>}/>
         <Route path="/documentation/getting-started" element={<GetiingStart/>}/>
         <Route path="/components/color" element={<MainColor/>}/>
       </Routes>
