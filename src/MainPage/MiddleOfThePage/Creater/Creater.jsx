@@ -56,7 +56,7 @@ export const Creater = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center mt-12 gap-8">
+        <div className="flex flex-wrap justify-center mt-12 gap-8">
           <div className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Prototyping
