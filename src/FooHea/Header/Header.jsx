@@ -26,13 +26,13 @@ export function StickyNavbar() {
       </Typography>
 
       <Typography as="li" variant="h6" className="p-1 font-normal">
-        <a href="/documentation/getting-started" className="flex items-center">
+        <a href="/getting-started" className="flex items-center">
           Documentation
         </a>
       </Typography>
 
       <Typography as="li" variant="h6" className="p-1 font-normal">
-        <a href="/components/color" className="flex items-center">
+        <a href="/color" className="flex items-center">
           Components
         </a>
       </Typography>

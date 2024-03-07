@@ -11,8 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage/>}/>
         <Route path="/about" element={<FAQ/>}/>
-        <Route path="/documentation/getting-started" element={<GetiingStart/>}/>
-        <Route path="/components/color" element={<MainColor/>}/>
+        <Route path="/getting-started" element={<GetiingStart/>}/>
+        <Route path="/color" element={<MainColor/>}/>
       </Routes>
     </FooHea>
   );
