@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Creater = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Animation duration in milliseconds
+      once: true, // Whether animation should only happen once
+      easing: 'ease-in-out', // Animation easing
+      // Add more options as needed
+    });
+  }, []);
   return (
     <section className="py-12 container">
       <div
@@ -12,7 +22,7 @@ export const Creater = () => {
       >
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-1/2">
-            <div className="bg-white flex flex-col gap-5 shadow-lg rounded-lg p-8  h-full">
+            <div data-aos="fade-up" className="bg-white flex flex-col gap-5 shadow-lg rounded-lg p-8  h-full">
               <h1 className="text-4xl font-bold text-gray-800 mb-4">Create</h1>
               <div className="">
                 <img
@@ -40,7 +50,7 @@ export const Creater = () => {
             </div>
           </div>
           <div className="md:w-1/2 mt-6 md:mt-0 md:ml-8">
-            <div className="bg-white shadow-lg  rounded-lg  overflow-hidden h-full">
+            <div data-aos="fade-up" className="bg-white shadow-lg  rounded-lg  overflow-hidden h-full">
               <video
                 autoPlay
                 loop
@@ -57,7 +67,7 @@ export const Creater = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 justify-center mt-12 gap-8">
-          <div className="max-w-sm text-center">
+          <div data-aos="fade-right" className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Prototyping
             </h2>
@@ -66,7 +76,7 @@ export const Creater = () => {
               like the real thing.
             </p>
           </div>
-          <div className="max-w-sm text-center">
+          <div data-aos="fade-up" className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Collaboration
             </h2>
@@ -75,7 +85,7 @@ export const Creater = () => {
               in context.
             </p>
           </div>
-          <div className="max-w-sm text-center">
+          <div data-aos="fade-left" className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Design Systems
             </h2>

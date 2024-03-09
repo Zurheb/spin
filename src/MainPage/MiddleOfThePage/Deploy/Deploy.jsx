@@ -1,7 +1,17 @@
 import { Carousel } from "@material-tailwind/react";
-import React from "react";
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Deploy = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Animation duration in milliseconds
+      once: true, // Whether animation should only happen once
+      easing: 'ease-in-out', // Animation easing
+      // Add more options as needed
+    });
+  }, []);
   return (
     <section className="py-12 container">
       <div
@@ -13,7 +23,7 @@ export const Deploy = () => {
       >
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-1/2">
-            <div className="bg-white flex flex-col gap-5 shadow-lg rounded-lg p-8">
+            <div data-aos="fade-up" className="bg-white flex flex-col gap-5 shadow-lg rounded-lg p-8">
               <h1 className="text-4xl font-bold text-gray-800 mb-4">Deploy</h1>
               <div className="">
                 <img
@@ -40,7 +50,7 @@ export const Deploy = () => {
             </div>
           </div>
           <div className="md:w-1/2 mt-6 md:mt-0 md:ml-8">
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div data-aos="fade-up" className="bg-white shadow-lg rounded-lg overflow-hidden">
               <Carousel 
               className="rounded-xl"
               autoplay={true}
@@ -66,7 +76,7 @@ export const Deploy = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-3 justify-center mt-12 gap-8">
-          <div className="max-w-sm text-center">
+          <div data-aos="fade-right" className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Natively integrated
             </h2>
@@ -75,7 +85,7 @@ export const Deploy = () => {
               infrastructure – at no additional cost.
             </p>
           </div>
-          <div className="max-w-sm text-center">
+          <div data-aos="fade-up" className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Resource metrics
             </h2>
@@ -84,7 +94,7 @@ export const Deploy = () => {
               your Kubernetes cluster, database.
             </p>
           </div>
-          <div className="max-w-sm text-center">
+          <div data-aos="fade-left"  className="max-w-sm text-center">
             <h2 className="font-bold text-lg text-gray-800 mb-2">
               Real-time alerts
             </h2>

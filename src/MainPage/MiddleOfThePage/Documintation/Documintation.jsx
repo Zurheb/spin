@@ -1,6 +1,15 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export const Documintation = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Animation duration in milliseconds
+      once: true, // Whether animation should only happen once
+      easing: 'ease-in-out', // Animation easing
+      // Add more options as needed
+    });
+  }, []);
   return (
     <section className="py-12">
       <div className="container mx-auto">
@@ -16,7 +25,7 @@ export const Documintation = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="rounded-lg  overflow-hidden shadow-lg bg-gradient-to-tr from-blue-300 to-pink-50 p-6 hover:shadow-2xl">
+          <div data-aos="fade-up" className="rounded-lg  overflow-hidden shadow-lg bg-gradient-to-tr from-blue-300 to-pink-50 p-6 hover:shadow-2xl">
             <svg
               className="w-12 h-12  mx-auto lg:mx-0 mb-4"
               viewBox="0 0 24 24"
@@ -36,7 +45,7 @@ export const Documintation = () => {
             </p>
           </div>
 
-          <div className="rounded-lg overflow-hidden shadow-lg bg-gradient-to-tr from-blue-300 to-pink-50 p-6 hover:shadow-2xl">
+          <div data-aos="fade-up" className="rounded-lg overflow-hidden shadow-lg bg-gradient-to-tr from-blue-300 to-pink-50 p-6 hover:shadow-2xl">
             <svg
               className="w-12 h-12 mx-auto lg:mx-0  mb-4"
               viewBox="0 0 24 24"
@@ -56,7 +65,7 @@ export const Documintation = () => {
             </p>
           </div>
 
-          <div className="rounded-lg  overflow-hidden shadow-lg bg-gradient-to-tr from-blue-300 to-pink-50 p-6 hover:shadow-2xl">
+          <div data-aos="fade-up" className="rounded-lg  overflow-hidden shadow-lg bg-gradient-to-tr from-blue-300 to-pink-50 p-6 hover:shadow-2xl">
             <svg
               className="w-12 h-12 mx-auto lg:mx-0 mb-4"
               viewBox="0 0 24 24"
