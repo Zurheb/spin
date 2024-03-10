@@ -1,13 +1,23 @@
 import { Button } from "@material-tailwind/react";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Animation duration in milliseconds
+      once: true, // Whether animation should only happen once
+      easing: 'ease-in-out', // Animation easing
+      // Add more options as needed
+    });
+  }, []);
   return (
     <section>
       <div className="container">
        <div className="flex flex-col lg:flex-row items-center justify-between py-10 lg:py-20">
   <div className="lg:w-1/2 mb-10 lg:mb-0">
-    <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+    <div data-aos="fade-right" className="flex flex-col items-center lg:items-start text-center lg:text-left">
       <h1 className="w-full lg:max-w-[450px] text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
         Design & Build Better Together.
       </h1>
@@ -27,7 +37,7 @@ export const Hero = () => {
       </div>
     </div>
   </div>
-  <div className="lg:w-1/2">
+  <div data-aos="fade-left" className="lg:w-1/2">
     <img
       className="rounded-lg shadow-lg w-full"
       src="https://themewagon.gitlab.io/spin/assets/img/gallery/banner-image.jpg"

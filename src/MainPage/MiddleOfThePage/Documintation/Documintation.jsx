@@ -15,7 +15,7 @@ export const Documintation = () => {
       <div className="container mx-auto">
         <div className="text-left flex flex-col gap-3 mb-12">
           <p className="text-lg font-bold text-gray-600">DOCUMENTATION</p>
-          <h1 className="text-5xl font-bold  mb-4">
+          <h1 className=" text-3xl  md:text-5xl font-bold  mb-4">
             Deploy and scale seamlessly
           </h1>
           <p className=" max-w-96 text-lg  text-gray-700">
