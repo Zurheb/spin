@@ -13,6 +13,7 @@ function App() {
         <Route path="/about" element={<FAQ/>}/>
         <Route path="/getting-started" element={<GetiingStart/>}/>
         <Route path="/color" element={<MainColor/>}/>
+        <Route path="*" element={<MainPage/>}/>
       </Routes>
     </FooHea>
   );
